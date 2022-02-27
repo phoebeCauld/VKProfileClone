@@ -27,6 +27,9 @@
 		2DEFE3F927C679D200059960 /* PhotosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEFE3F827C679D200059960 /* PhotosTableViewCell.swift */; };
 		2DEFE3FC27C67AF800059960 /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEFE3FB27C67AF800059960 /* PhotosCollectionViewController.swift */; };
 		2DEFE3FE27C67BA400059960 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEFE3FD27C67BA400059960 /* PhotoCollectionViewCell.swift */; };
+		2DFB486827CBF7C600337D11 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB486727CBF7C600337D11 /* Builder.swift */; };
+		2DFB486A27CBF86C00337D11 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB486927CBF86C00337D11 /* Router.swift */; };
+		2DFB486C27CBFE7200337D11 /* MoreDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB486B27CBFE7200337D11 /* MoreDetailTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +55,9 @@
 		2DEFE3F827C679D200059960 /* PhotosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosTableViewCell.swift; sourceTree = "<group>"; };
 		2DEFE3FB27C67AF800059960 /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewController.swift; sourceTree = "<group>"; };
 		2DEFE3FD27C67BA400059960 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		2DFB486727CBF7C600337D11 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		2DFB486927CBF86C00337D11 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		2DFB486B27CBFE7200337D11 /* MoreDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreDetailTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +93,9 @@
 				2D8BE84E27C2439700C9332C /* AppDelegate.swift */,
 				2D8BE85027C2439700C9332C /* SceneDelegate.swift */,
 				2D8BE86627C3831B00C9332C /* NetworkService.swift */,
+				2DFB486727CBF7C600337D11 /* Builder.swift */,
+				2DFB486927CBF86C00337D11 /* Router.swift */,
+				2DFB486B27CBFE7200337D11 /* MoreDetailTableViewController.swift */,
 				2DEFE3ED27C6512800059960 /* View */,
 				2DEFE3EF27C6514100059960 /* Model */,
 				2DEFE3F027C6515400059960 /* ProfileViewModel */,
@@ -229,6 +238,7 @@
 			files = (
 				2D8BE85327C2439700C9332C /* ProfileViewController.swift in Sources */,
 				2D2535BD27C569F200C2BE90 /* Colors.swift in Sources */,
+				2DFB486827CBF7C600337D11 /* Builder.swift in Sources */,
 				2D8BE86927C39A3300C9332C /* UserModel.swift in Sources */,
 				2D8BE86527C37FDC00C9332C /* CurrentUserViewModel.swift in Sources */,
 				2DEFE3F927C679D200059960 /* PhotosTableViewCell.swift in Sources */,
@@ -238,7 +248,9 @@
 				2D2535BF27C56E0700C2BE90 /* Helpers.swift in Sources */,
 				2DEFE3EC27C63C4400059960 /* MoreProfileDetailCell.swift in Sources */,
 				2D8BE84F27C2439700C9332C /* AppDelegate.swift in Sources */,
+				2DFB486A27CBF86C00337D11 /* Router.swift in Sources */,
 				2DEFE3F427C651CD00059960 /* FriendsCollectionViewController.swift in Sources */,
+				2DFB486C27CBFE7200337D11 /* MoreDetailTableViewController.swift in Sources */,
 				2D8BE85127C2439700C9332C /* SceneDelegate.swift in Sources */,
 				2D2535BB27C55D4F00C2BE90 /* ProfileMainInfoCell.swift in Sources */,
 				2D8BE86727C3831B00C9332C /* NetworkService.swift in Sources */,

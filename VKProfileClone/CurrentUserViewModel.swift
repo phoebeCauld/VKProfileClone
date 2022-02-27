@@ -6,17 +6,20 @@
 //
 
 protocol ViewModelProtocol {
-    init(networkService: NetworkServiceProtocol?)
+    init(networkService: NetworkServiceProtocol?, router: RouterProtocol)
+    func showMoreDetail()
 }
 
 
 class CurrentUserViewModel: ViewModelProtocol {
     
     private var networkService: NetworkServiceProtocol?
+    var router: RouterProtocol?
     var updateViewData: (() -> Void)?
     
-    required init(networkService: NetworkServiceProtocol?) {
+    required init(networkService: NetworkServiceProtocol?, router: RouterProtocol) {
         self.networkService = networkService
+        self.router = router
     }
     
     func fetchData() {
@@ -40,5 +43,10 @@ class CurrentUserViewModel: ViewModelProtocol {
                 return
             }
         }
+    }
+    
+    func showMoreDetail() {
+        guard let router = router else { return }
+        router.showProfileVC()
     }
 }
