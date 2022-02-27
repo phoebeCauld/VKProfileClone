@@ -42,6 +42,7 @@ class MoreProfileDetailCell: UITableViewCell {
         moreDetailButton.titleLabel?.font = .boldSystemFont(ofSize: 18)
         moreDetailButton.contentHorizontalAlignment = .left
         moreDetailButton.tintColor = .white
+        moreDetailButton.addTarget(ProfileViewController(), action: #selector(ProfileViewController.showMoreDetail), for: .touchUpInside)
         return moreDetailButton
     }()
     

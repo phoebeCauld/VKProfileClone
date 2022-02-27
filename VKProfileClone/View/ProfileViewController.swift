@@ -7,7 +7,7 @@
 
 import UIKit
 
-enum CellType: Int {
+fileprivate enum CellType: Int {
     case info
     case moreDetail
     case friends
@@ -19,11 +19,15 @@ class ProfileViewController: UITableViewController {
     private var detailCellId = "detailCellId"
     private var friendsCellId = "friendsCellId"
     private var photosCellId = "photosCellId"
-
+    var profileViewModel: ViewModelProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.backgroundColor = Colors.backgroundColor
+        configTableViewCells()
+    }
+    
+    private func configTableViewCells() {
         tableView.register(ProfileMainInfoCell.self, forCellReuseIdentifier: cellId)
         tableView.register(MoreProfileDetailCell.self, forCellReuseIdentifier: detailCellId)
         tableView.register(FriendsTableViewCell.self, forCellReuseIdentifier: friendsCellId)
@@ -33,6 +37,10 @@ class ProfileViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 4
+    }
+    
+    @objc func showMoreDetail() {
+        //profileViewModel?.showMoreDetail()
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
